@@ -1,0 +1,12 @@
+# Copy this file to ~/.config/ghostty/config to enable it.
+
+theme = Zenburned
+font-family = "FiraCode Nerd Font Mono"
+font-size = 13
+scrollback-limit = 100000
+cursor-style = block
+cursor-style-blink = false
+window-padding-x = 10
+window-padding-y = 8
+window-padding-balance = true
+copy-on-select = clipboard

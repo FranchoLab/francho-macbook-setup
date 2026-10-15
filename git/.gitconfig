@@ -1,0 +1,30 @@
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true
+
+[core]
+	editor = code --wait
+	excludesfile = ~/.gitignore_global
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	light = false
+	line-numbers = true
+
+[merge]
+	conflictStyle = diff3
+
+[diff]
+	colorMoved = default
+
+[pager]
+	# Delta provides syntax highlighting and readable side-by-side diffs.
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta

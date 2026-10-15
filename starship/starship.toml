@@ -1,0 +1,58 @@
+# A compact prompt: useful context without slowing down interactive shells.
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$azure\
+$cmd_duration\
+$line_break\
+$character"""
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold blue"
+
+[git_branch]
+format = " [$symbol$branch]($style)"
+symbol = " "
+style = "bold purple"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style))"
+style = "bold red"
+conflicted = "=${count}"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+modified = "!${count}"
+staged = "+${count}"
+renamed = "»${count}"
+deleted = "✘${count}"
+
+[nodejs]
+format = " [$symbol$version]($style)"
+symbol = "node "
+style = "bold green"
+
+[python]
+format = " [$symbol$version]($style)"
+symbol = "py "
+style = "bold yellow"
+
+[azure]
+format = " [$symbol($subscription)]($style)"
+symbol = "az "
+style = "blue bold"
+
+[cmd_duration]
+min_time = 2_000
+format = " [took $duration]($style)"
+style = "dimmed white"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"

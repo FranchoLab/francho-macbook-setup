@@ -1,0 +1,13 @@
+GitHub.copilot
+GitHub.copilot-chat
+esbenp.prettier-vscode
+dbaeumer.vscode-eslint
+EditorConfig.EditorConfig
+ms-azuretools.vscode-containers
+ms-vscode.powershell
+yzhang.markdown-all-in-one
+antfu.theme-vitesse
+ms-vscode-remote.remote-containers
+streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-british-english
+streetsidesoftware.code-spell-checker-spanish
